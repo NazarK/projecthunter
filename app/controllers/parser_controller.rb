@@ -42,14 +42,14 @@ class ParserController < ApplicationController
   def exec
      uri = "http://www.odesk.com/api/profiles/v1/search/jobs.json?page=1;200";    
      html = Net::HTTP.get_response(URI.parse(uri)).body
-     File.open('cache.html','w') { |file| file.puts html }
-
+     #File.open('cache.html','w') { |file| file.puts html }
+=begin
      f = File.open('cache.html','r')
      html = ""
      f.each_line do |line|
        html += line
      end
-
+=end
      json = JSON.parse(html)
      
      for key, value in json
