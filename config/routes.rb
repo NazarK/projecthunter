@@ -1,4 +1,10 @@
 Projecthunter::Application.routes.draw do
+  get "parser/exec"
+
+  resources :projects
+
+  get "projects/parse"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

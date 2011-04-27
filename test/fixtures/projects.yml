@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  title: MyString
+  state: 
+  bids: 1
+  cipher: MyString
+
+two:
+  title: MyString
+  state: 
+  bids: 1
+  cipher: MyString
