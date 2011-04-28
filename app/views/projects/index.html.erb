@@ -13,7 +13,7 @@
 
 <% @projects.each do |project| %>
   <tr>
-    <td><%= project.title %></td>
+    <td><a href=http://odesk.com/jobs/<%= project.cipher %>><%= project.title %></a></td>
     <td><%= project.state %></td>
     <td><%= project.bids %></td>
     <td><%= project.cipher %></td>
