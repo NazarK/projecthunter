@@ -1,4 +1,7 @@
 Projecthunter::Application.routes.draw do
+  match "/" => "pages#home"
+  get "pages/home"
+
   get "parser/exec"
 
   resources :projects
